@@ -377,7 +377,7 @@ def train_model(model, train_loader, val_loader, epochs, device, args=None):
     return best_model_path, output_dir
 
 
-def evaluate_model(model, test_loader, compute_metrics_fn, device, output_dir):
+def evaluate_model(model, test_loader, compute_metrics_fn, device, output_dir=None):
     """
     在测试集上评估模型性能。
     

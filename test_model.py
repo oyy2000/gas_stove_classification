@@ -140,7 +140,7 @@ def main():
     model.load_state_dict(torch.load("best_gas_stove_model_20241207_103317.pth"))
 
     # 在测试集上评估模型
-    evaluate_model(model, test_loader, compute_metrics, device)
+    evaluate_model(model, test_loader, compute_metrics, device, './')
     
 
 if __name__ == "__main__":
