@@ -1,0 +1,7 @@
+*.pth   
+imgs
+gas_stove_images
+__pycache__
+model/**
+all_imgs/**
+model_downsample*
