@@ -109,7 +109,7 @@ def main():
 
     print("Processing data")
     # 加载和预处理数据 (确保utils.py中已定义好 load_and_preprocess_data 函数)
-    df_balanced = load_and_preprocess_data(data_path, image_save_dir, downsample=args.downsample)
+    df_balanced = load_and_preprocess_data(data_path, image_save_dir, args)
 
     # 图像转换
     transform = transforms.Compose([
