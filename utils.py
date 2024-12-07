@@ -401,7 +401,7 @@ def evaluate_model(model, test_loader, compute_metrics_fn, device, output_dir=No
             label_2 = label_2.to(device)
 
             output_1, output_2 = model(images)
-            precision, recall, f1, accuracy = compute_metrics_fn(output_1, label_1)
+            precision, recall, f1, accuracy,fpr = compute_metrics_fn(output_1, label_1)
 
             test_metrics["precision"].append(precision)
             test_metrics["recall"].append(recall)
